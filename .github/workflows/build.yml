@@ -25,7 +25,9 @@ jobs:
         run: gradle build --no-daemon
 
       - name: Upload built JAR
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: anubis-client-1.21.11-jar
-          path: build/libs/*-1.21.11.jar
+          path: build/libs/*.jar
+          if-no-files-found: warn
