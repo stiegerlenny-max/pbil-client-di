@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "anubis_client",
+  "version": "${version}",
+  "name": "Anubis Style Client",
+  "description": "Anubis-inspired click GUI and client modules for Fabric 1.21.11.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.anubis.AnubisClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
